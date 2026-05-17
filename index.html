@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ohana Labs — Mobile apps and games, made with care.</title>
+  <meta name="description" content="Ohana Labs is an independent mobile studio building small, focused apps and games. Quiet design, no dark patterns, made to last.">
+  <meta name="theme-color" content="#06192f">
+
+  <meta property="og:title" content="Ohana Labs">
+  <meta property="og:description" content="Mobile apps and games, made with care.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ohana-apps.github.io/">
+
+  <style>
+    :root {
+      --ink:     #06192f;
+      --deep:    #123c69;
+      --accent:  #0b6b8a;
+      --body:    #2f3140;
+      --muted:   #6b7280;
+      --rule:    #e5e7eb;
+      --bg:      #fdfdfb;
+      --card:    #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--body);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header */
+    header {
+      padding: 28px 0 0;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .brand .dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: inline-block;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 72px 0 56px;
+    }
+    .hero h1 {
+      font-size: clamp(34px, 5vw, 52px);
+      line-height: 1.08;
+      letter-spacing: -0.5px;
+      color: var(--ink);
+      margin: 0 0 18px;
+      font-weight: 700;
+    }
+    .hero p.lede {
+      font-size: clamp(18px, 2.2vw, 22px);
+      line-height: 1.5;
+      color: var(--deep);
+      margin: 0;
+      max-width: 640px;
+    }
+
+    /* Sections */
+    section {
+      padding: 40px 0;
+      border-top: 1px solid var(--rule);
+    }
+    section h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent);
+      margin: 0 0 18px;
+      font-weight: 600;
+    }
+    section .body-large {
+      font-size: 19px;
+      line-height: 1.6;
+      color: var(--body);
+      max-width: 680px;
+    }
+
+    /* Pillars grid */
+    .grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-top: 8px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 10px;
+      padding: 22px 22px 24px;
+    }
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+      color: var(--ink);
+      letter-spacing: -0.1px;
+    }
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15.5px;
+      line-height: 1.55;
+    }
+
+    /* Principles list */
+    .principles {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 0;
+      display: grid;
+      gap: 18px;
+    }
+    .principles li {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      gap: 14px;
+      align-items: baseline;
+    }
+    .principles .n {
+      color: var(--accent);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      font-size: 17px;
+    }
+    .principles .t {
+      color: var(--body);
+      font-size: 16.5px;
+      line-height: 1.55;
+    }
+    .principles .t b {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* Contact */
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 22px;
+      align-items: baseline;
+    }
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(11,107,138,0.35);
+      padding-bottom: 1px;
+    }
+    .contact a:hover { border-bottom-color: var(--accent); }
+    .contact .label {
+      color: var(--muted);
+      font-size: 14px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      min-width: 70px;
+    }
+
+    /* Footer */
+    footer {
+      padding: 48px 0 64px;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--rule);
+      margin-top: 24px;
+    }
+    footer p { margin: 6px 0; }
+    footer em { color: var(--deep); font-style: normal; }
+
+    @media (max-width: 540px) {
+      .hero { padding: 52px 0 40px; }
+      section { padding: 32px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <header>
+      <a class="brand" href="/"><span class="dot"></span> Ohana Labs</a>
+    </header>
+
+    <div class="hero">
+      <h1>Mobile apps and games,<br>made with care.</h1>
+      <p class="lede">An independent studio building small, focused mobile experiences — quiet design, no dark patterns, made to last.</p>
+    </div>
+
+    <section>
+      <h2>About</h2>
+      <p class="body-large">
+        Ohana Labs is a one-person indie studio based in Israel. We design and build mobile apps and games for iOS and Android, with a bias toward simple ideas executed with patience. Software you can hand to a kid, a parent, or a friend — and feel good about.
+      </p>
+    </section>
+
+    <section>
+      <h2>What we make</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Casual games</h3>
+          <p>Pick-up-and-play experiences that respect your time. No grind, no manipulation — just a few good minutes.</p>
+        </div>
+        <div class="card">
+          <h3>Everyday tools</h3>
+          <p>Small utilities that solve a specific, real problem cleanly. The kind of app you keep on the home screen.</p>
+        </div>
+        <div class="card">
+          <h3>Crafted to last</h3>
+          <p>We polish before we ship and maintain after we ship. Built for the long quiet life on your device.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>How we work</h2>
+      <ol class="principles">
+        <li>
+          <span class="n">01</span>
+          <span class="t"><b>Privacy by default.</b> Minimum data, no tracking SDKs, no behavioral ads. If we don&rsquo;t need it, we don&rsquo;t collect it.</span>
+        </li>
+        <li>
+          <span class="n">02</span>
+          <span class="t"><b>Localized from day one.</b> English and Hebrew shipped together, RTL done properly. More languages as we grow.</span>
+        </li>
+        <li>
+          <span class="n">03</span>
+          <span class="t"><b>Slow software.</b> Fewer features, better ones. We&rsquo;d rather ship one good thing than ten loud ones.</span>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>What&rsquo;s next</h2>
+      <p class="body-large">
+        We&rsquo;re putting the finishing touches on our first releases — coming soon to the App Store and Google Play. If you&rsquo;d like a heads-up when they land, drop us a line.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="contact">
+        <span class="label">Email</span>
+        <a href="mailto:ohana.ai.apps@gmail.com">ohana.ai.apps@gmail.com</a>
+      </div>
+    </section>
+
+    <footer>
+      <p><em>Ohana</em> &mdash; <em>family</em> in Hawaiian. We build apps the way you&rsquo;d build something for someone you love.</p>
+      <p>&copy; <span id="year">2026</span> Ohana Labs. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
