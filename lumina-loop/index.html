@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <meta name="date" content="2026-10-22">
+  <title>Documents &amp; support · Lumina Loop</title>
+  <style>
+    :root { color-scheme: dark; --bg: #060c18; --surface: #101e2d; --line: #28434d; --text: #eaf3f6; --muted: #a5bac6; --mint: #aaffdf; }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 24px; }
+    body { margin: 0; background: radial-gradient(ellipse at 50% 0, #102b35 0, var(--bg) 520px); color: var(--text); font: 17px/1.75 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    a { color: var(--mint); text-underline-offset: 4px; overflow-wrap: anywhere; }
+    a:hover { color: #fff; }
+    a:focus-visible { outline: 3px solid var(--mint); outline-offset: 5px; border-radius: 3px; }
+    .page { max-width: 800px; margin: 0 auto; padding: 40px 24px 28px; }
+    .skip-link { position: absolute; top: 12px; left: 12px; z-index: 1; padding: 8px 16px; background: var(--surface); transform: translateY(-180%); }
+    .skip-link:focus { transform: translateY(0); }
+    .brand a { display: inline-flex; align-items: center; gap: 16px; text-decoration: none; color: var(--text); font-size: 15px; font-weight: 650; letter-spacing: 4px; }
+    .brand-accent { color: var(--mint); font-weight: 450; }
+    .orbit { position: relative; display: inline-grid; place-items: center; width: 44px; height: 44px; border: 1px solid #548879; border-radius: 50%; }
+    .orbit::before, .orbit::after { content: ""; position: absolute; border: 1px solid #6bb49a; border-radius: 50%; }
+    .orbit::before { width: 30px; height: 30px; }
+    .orbit::after { width: 18px; height: 18px; }
+    .orbit span { width: 7px; height: 7px; background: var(--mint); border-radius: 50%; box-shadow: 0 0 14px #aaffdf88; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 30px 0 48px; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+    nav a { display: inline-flex; align-items: center; min-height: 36px; font-size: 14px; text-decoration: none; color: var(--muted); }
+    nav a[aria-current="page"] { color: var(--mint); text-decoration: underline; }
+    .eyebrow { color: var(--mint); font-size: 11px; font-weight: 650; letter-spacing: 2px; }
+    h1 { margin: 8px 0 16px; font-size: clamp(32px, 6vw, 48px); line-height: 1.18; font-weight: 550; letter-spacing: -1px; overflow-wrap: anywhere; }
+    .metadata { margin: 0; color: var(--muted); font-size: 13px; }
+    .document-header { margin-bottom: 30px; }
+    .draft { margin: 0 0 36px; padding: 16px 20px; border: 1px solid #987548; border-radius: 14px; background: #2b241c; color: #ffe1ad; font-size: 14px; }
+    .draft p { margin: 4px 0 0; }
+    section { margin: 34px 0; }
+    h2 { margin: 0 0 14px; color: #d5f5e8; font-size: 21px; line-height: 1.45; font-weight: 600; }
+    p { margin: 0 0 16px; overflow-wrap: anywhere; }
+    section p:last-child { margin-bottom: 0; }
+    .document-links { display: grid; gap: 14px; }
+    .document-link { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 76px; padding: 18px 22px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; font-size: 19px; text-decoration: none; }
+    .document-link:hover { border-color: var(--mint); }
+    .contact { margin-top: 24px; font-size: 15px; }
+    footer { margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+    footer p { margin-bottom: 5px; }
+    @media (max-width: 420px) { body { font-size: 16px; } .page { padding: 28px 18px 24px; } nav { gap: 4px 16px; margin-bottom: 34px; } .metadata { line-height: 1.8; } .document-link { padding: 16px 18px; } }
+    @media print { :root { color-scheme: light; } body { background: #fff; color: #111; font-size: 11pt; } .page { max-width: none; padding: 0; } .brand, nav, .skip-link { display: none; } h1, h2, .eyebrow { color: #111; } a { color: #111; } .metadata, footer { color: #444; } .draft { background: none; color: #111; border-color: #777; } section { break-inside: avoid; } }
+
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="page">
+    <header class="brand">
+      <a href="index.html" aria-label="Lumina Loop documents overview">
+        <span class="orbit" aria-hidden="true"><span></span></span>
+        <span>LUMINA <span class="brand-accent">LOOP</span></span>
+      </a>
+    </header>
+    <nav aria-label="Documents"><a href="index.html" aria-current="page">Overview</a>
+<a href="privacy-policy.html">Privacy Policy</a>
+<a href="terms.html">Terms of Use</a>
+<a href="support.html">Support</a>
+</nav>
+    <main id="content" tabindex="-1">
+      <header class="document-header">
+        <p class="eyebrow">OHANA LABS · LUMINA LOOP</p>
+        <h1>Documents &amp; support</h1>
+        <p class="metadata">Last updated <time datetime="2026-10-22">October 22, 2026</time> · Version 2026-10-22</p>
+      </header>
+
+      <div class="document-links">
+<a class="document-link" href="privacy-policy.html"><span>Privacy Policy</span><span aria-hidden="true">→</span></a>
+<a class="document-link" href="terms.html"><span>Terms of Use</span><span aria-hidden="true">→</span></a>
+<a class="document-link" href="support.html"><span>Support</span><span aria-hidden="true">→</span></a>
+</div>
+<p class="contact"><a href="mailto:ohana.ai.apps@gmail.com">ohana.ai.apps@gmail.com</a></p>
+
+    </main>
+    <footer>
+      <p>Moran Ohana, operating as Ohana Labs</p>
+      <p><a href="mailto:ohana.ai.apps@gmail.com">ohana.ai.apps@gmail.com</a> · Version 2026-10-22</p>
+    </footer>
+  </div>
+</body>
+</html>
