@@ -16,7 +16,7 @@
 <body>
   <div class="lang-switch"><a href="privacy-policy-he.html">עברית</a></div>
   <h1>Tap It – Privacy Policy</h1>
-  <p><em>Last updated: October 2026</em></p>
+  <p><em>Last updated: November 2026</em></p>
 
   <h2>1. Introduction</h2>
   <p>This Privacy Policy explains how Tap It ("the Game") collects, uses, and protects your information. Tap It is operated by Moran Ohana, doing business as Ohana Labs ("we", "us", or "our"), who is responsible for your information; contact: <a href="mailto:ohana.ai.apps@gmail.com">ohana.ai.apps@gmail.com</a>. By using the Game, you consent to the practices described in this policy.</p>
@@ -39,6 +39,8 @@
   </ul>
   <p><strong>Information collected by Firebase infrastructure:</strong></p>
   <p>Google Firebase (our backend provider) may automatically collect certain technical data as part of its standard operations, including IP addresses and basic device/network information, for security and service reliability purposes. This data is handled according to Google's Privacy Policy.</p>
+  <p><strong>Crash reports:</strong></p>
+  <p>After you accept the Terms of Use and this Privacy Policy, the Game sends a crash report through Google Firebase Crashlytics when the app crashes. A crash report contains technical details about the crash (such as the error and where in the app it happened), the device model, operating system and app version, and a random installation ID. It does not include your username or your game data. Nothing is sent before you accept.</p>
   <p><strong>We do NOT collect:</strong> email addresses, real names, phone numbers, location data, or photos/media.</p>
 
   <h2>3. How We Use Your Information</h2>
@@ -50,11 +52,12 @@
     <li>Allow account recovery on new devices</li>
     <li>Sync your game progress across sessions</li>
     <li>Review usernames that players report or block, and remove offensive ones</li>
+    <li>Find and fix crashes and bugs (using crash reports)</li>
   </ul>
   <p>We do not use your information for profiling, targeted advertising, or any purpose unrelated to the Game.</p>
 
   <h2>4. Data Storage and Security</h2>
-  <p>Your data is stored using Google Firebase services (Firestore and Firebase Authentication), which are hosted on Google Cloud Platform. Data is transmitted using industry-standard encryption (TLS/SSL).</p>
+  <p>Your data is stored using Google Firebase services (Firestore and Firebase Authentication, and Firebase Crashlytics for crash reports), which are hosted on Google Cloud Platform. Data is transmitted using industry-standard encryption (TLS/SSL).</p>
   <p>Your tap count is also stored locally on your device using SharedPreferences for offline play.</p>
   <p>While we take reasonable measures to protect your information, no method of electronic storage or transmission is 100% secure.</p>
 
@@ -86,16 +89,16 @@
   <p>You have the right to:</p>
   <ul>
     <li>Access your data (visible in-app through your profile)</li>
-    <li>Request deletion of your data by contacting us</li>
+    <li>Delete your account and data at any time in the app (Profile → Delete Account), or ask us to delete it by contacting us</li>
     <li>Stop using the Game at any time by uninstalling it</li>
   </ul>
-  <p>If you uninstall the Game, your local data is automatically deleted. To request deletion of your server-side data, please contact us.</p>
+  <p>Deleting your account in the app permanently removes your player profile, scores, block reports, recovery code and sign-in account from our servers, and clears the Game's data on your device. If you only uninstall the Game, your local data is deleted but your account stays on our servers; to remove it, delete your account in the app first or contact us. See also our <a href="delete-account.html">account deletion page</a>.</p>
 
   <h2>9. Administrative Access</h2>
   <p>Authorized personnel may access or modify game data (such as your tap count) for legitimate administrative purposes, including correcting errors or investigating abuse. Such access is limited to what is necessary and is not used for any purpose unrelated to operating the Game.</p>
 
   <h2>10. Data Retention</h2>
-  <p>We retain your data for as long as your account exists and the Game is operational. If you wish to have your data deleted, please contact us.</p>
+  <p>We retain your data for as long as your account exists and the Game is operational. You can delete your account at any time in the app (Profile → Delete Account) or ask us to delete it. Crash reports are kept by Firebase Crashlytics for up to 90 days.</p>
   <p>Inactive accounts (no activity for 12 months or more) may be deleted at our discretion.</p>
 
   <h2>11. International Data Transfers</h2>
